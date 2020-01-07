@@ -1,0 +1,17 @@
+[user]
+    email = malo.allee@gmail.com
+    name = Malo ALLEE
+[alias]
+    au    = add -u
+    cm    = commit -m
+    d     = diff
+    sd    = diff --staged
+    s     = status
+    st    = stash
+    sa    = stash apply
+    br    = branch
+    c     = checkout
+    cb    = checkout -b
+    lg    = log --graph --pretty=tformat:‘%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %cr)%Creset’ --abbrev-commit --date=relative
+[core]
+    excludesfile = /home/ortes/.gitignore_global
