@@ -1,6 +1,3 @@
-[user]
-    email = malo.allee@gmail.com
-    name = Malo ALLEE
 [alias]
     au    = add -u
     cm    = commit -m
@@ -12,6 +9,10 @@
     br    = branch
     c     = checkout
     cb    = checkout -b
-    lg    = log --graph --pretty=tformat:‘%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %cr)%Creset’ --abbrev-commit --date=relative
+    c-    = checkout "@{-1}"
+    c--   = checkout "@{-2}"
+    c---  = checkout "@{-3}"
+    lg    = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+
 [core]
     excludesfile = /home/ortes/.gitignore_global
