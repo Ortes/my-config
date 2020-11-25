@@ -2,6 +2,7 @@
     au    = add -u
     a     = add
     cm    = commit -m
+    cl    = clone
     d     = diff
     sd    = diff --staged
     s     = status
