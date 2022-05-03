@@ -1,0 +1,20 @@
+[alias]
+    au    = add -u
+    a     = add
+    cm    = commit -m
+    cl    = clone
+    d     = diff
+    sd    = diff --staged
+    s     = status
+    st    = stash
+    sa    = stash apply
+    br    = branch
+    c     = checkout
+    cb    = checkout -b
+    c-    = checkout "@{-1}"
+    c--   = checkout "@{-2}"
+    c---  = checkout "@{-3}"
+    lg    = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+
+[core]
+    excludesfile = /home/ortes/.gitignore_global
