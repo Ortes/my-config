@@ -175,10 +175,19 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 2
 bindsym $mod+x move workspace to output left
 bindsym $mod+b exec google-chrome --force-dark-mode
 bindsym $mod+l exec i3lock -e -t -i ~/.wallpapers/dreaming-flower.png
-# bindsym $mod+p xrandr --auto --output HDMI2 --right-of eDP1
-bindsym Print exec gnome-screenshot -i
-# bindsym Print exec sleep 0.1 && scrot '/home/ortes/screen.png
+#bindsym $mod+p xrandr --auto --output HDMI2 --right-of eDP1
+# generated with arandr
+exec --no-startup-id /home/ortes/.screenlayout/default.sh
+bindsym $mod+o exec ~/.local/bin/toggle-keyboard.sh
 
+
+
+# Screenshots
+#bindsym Print exec gnome-screenshot -i
+#bindsym Print exec sleep 0.1 && scrot '/home/ortes/screen.png
+
+
+# Background
 exec --no-startup-id feh --no-fehbg --bg-center /home/ortes/.wallpapers/dreaming-flower.png
 
 
