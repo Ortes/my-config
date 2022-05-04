@@ -71,7 +71,9 @@ ENABLE_CORRECTION="true"
 
 # Do this on first run for zsh-syntax-highlighting
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-plugins=(git ssh-agent autojump ubuntu zsh-syntax-highlighting)
+zstyle :omz:plugins:ssh-agent lazy yes
+
+plugins=(git ssh-agent ubuntu)
 
 source $ZSH/oh-my-zsh.sh
 
